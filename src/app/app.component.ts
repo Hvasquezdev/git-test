@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  condicion: String;
+
+  loading: Boolean = false;
+
+  constructor() {
+
+    this.condicion = 'rojo';
+
+  }
+
+  activar() {
+    this.loading = true;
+    console.log(this.loading);
+
+  }
+
 }
